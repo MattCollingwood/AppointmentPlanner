@@ -35,7 +35,7 @@ export const ContactsPage = (props) => {
   useEffect(() => {
     const result = props.contacts.find((element) => {
       return element.name === name;
-    }, [props.contacts]);
+    });
     if (result !== undefined) {
       setDuplicate(true);
     }
